@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelia - Explore the world</title>
+
+    <meta name="title" content="Travel - Explore the world">
+    <meta name="description" content="This is a travel website made by Princy">
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload"as="image" href="./assets/images/hero-banner.png">
+    <link rel="preload"as="image" href="./assets/images/preloader.svg">
+
+
+</head>
+
+<body>
+
+    <!--preloader-->
+    <div class="preloader" data-preloader>
+        <div class="preloader-inner">
+            <img src="./assets/images/preloader.svg" width="50" height="50" alt="" class="img">
+        </div>
+    </div>
+
+
+
+    <!--header-->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="187" height="38" alt="logo">
+            </a>
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="#" class="logo"><img src="./assets/images/logo.svg" width="187" height="38" alt="logo"></a>
+                    <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link ">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="about_us.html" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="services.html" class="navbar-link">Services</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="pricing.html" class="navbar-link">Pricing</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-link">Contact</a>
+                    </li>
+                    
+                </ul>
+                <div class="header-action">
+                    <a href="login_copy.html" class="login-btn">Login</a>
+                    <a href="login_copy.html" class="btn btn-primary ">Sign Up</a>
+                    
+                </div>
+  
+            </nav>
+            <button class="nav-toggle-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon> 
+            </button>
+
+            <div class="overlay" data-overlay data-nav-toggler=""></div>
+        </div>
+    </header>
+    <main><section class="section"aria-label="destination">
+
+        <div class="container">
+            <div class="desti">
+               <br><br>
+            <p class="section-subtitle">Top destination</p>
+            <h2 class="h2 title section-title">Explore Top Destination</h2>
+            <ul class="desti-list">
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/baloons.jpeg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the Melbourne Baloon flights" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the Melbourne Baloon flights</a>
+                            </h3>
+                            <address class="card-text">
+                                Melbourne, Australia
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    4.4
+                            </span>
+                            <p class="rating-text">(49.6k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/destination-1.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the del Pincio" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the del Pincio</a>
+                            </h3>
+                            <address class="card-text">
+                                Rome, Italy
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                4.7
+                            </span>
+                            <p class="rating-text">(11.1k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/taj-mahal.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the symbol of love" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the Symbol of Love </a>
+                            </h3>
+                            <address class="card-text">
+                                Taj Mahal Agra, India
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    4.9
+                            </span>
+                            <p class="rating-text">(69k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/destination-2.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the Pakistan Monument" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the Pakistan Monument</a>
+                            </h3>
+                            <address class="card-text">
+                                Islamabad, Pakistan
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    4.6
+                            </span>
+                            <p class="rating-text">(16.9k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/destination-3.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the Burj Khalifa" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the Burj Khalifa</a>
+                            </h3>
+                            <address class="card-text">
+                                Skyscraper in Dubai
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    4.7
+                            </span>
+                            <p class="rating-text">(120k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/destination-4.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the Milaidhoo" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the Milaidhoo</a>
+                            </h3>
+                            <address class="card-text">
+                                Island in the Maldives
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    4.7
+                            </span>
+                            <p class="rating-text">(70 Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/destination-5.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the Ko Tao" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the Ko Tao</a>
+                            </h3>
+                            <address class="card-text">
+                                Island in the Gulf of Thailand
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    4.1
+                            </span>
+                            <p class="rating-text">(985 Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/destination-6.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the Grand Mecidiye Mosque" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the Grand Mecidiye Mosque</a>
+                            </h3>
+                            <address class="card-text">
+                                Mosque in Istanbul, Türkiye
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    4.8
+                            </span>
+                            <p class="rating-text">(29.6k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/paris.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the city of lights" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the city of lights</a>
+                            </h3>
+                            <address class="card-text">
+                                Paris, France
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    4.9
+                            </span>
+                            <p class="rating-text">(22.6k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/maldives.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the tropical haven" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the tropical haven</a>
+                            </h3>
+                            <address class="card-text">
+                                Maldives, Maldives
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    4.3
+                            </span>
+                            <p class="rating-text">(25.6k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/new-york.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the city that never sleeps" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the city that never sleeps</a>
+                            </h3>
+                            <address class="card-text">
+                                New York, USA
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    3.9
+                            </span>
+                            <p class="rating-text">(2.6k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="desti-card">
+                        <div class="card-banner img-holder" style="--width:600 ;--height:650 ;">
+                            <img src="./assets/images/egypt.jpg" width="600" height="650" loading="eager" alt="Enjoy the Beauty of the pyramids of giza" class="img-cover">
+
+                            <span class="card-price">&#8377;27,999</span>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="h3 title">
+                                <a href="#" class="card-title">Enjoy the Beauty of the pyramids of giza </a>
+                            </h3>
+                            <address class="card-text">
+                                Giza, Egypt
+                            </address>
+                            <div class="card-rating">
+                                <span class="span"><ion-icon name="star" aria-hidden="true"></ion-icon>
+                                    3.3
+                            </span>
+                            <p class="rating-text">(13.6k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+               
+                
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Contact us for more locations...</a>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><img src="./assets/images/logo.svg" alt="logo"></a>
+
+                    <p class="footer-text">We always make our customer
+                        happy by providing as many
+                        choices as possible</p>
+
+                        <ul class="social-list">
+
+                            <li>
+                                <a href="https://www.instagram.com/__princy.singh__/" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/__princy.singh__/" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/__princy.singh__/" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a>
+                            </li>
+                        </ul>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">About</p>
+                </li>
+                <li>
+                    <a href="about_us.html" class="footer-link">About Us</a>
+                </li>
+                <li>
+                    <a href="services.html" class="footer-link">Features</a>
+                </li>
+                <li>
+                    <a href="news.html" class="footer-link">News</a>
+                </li>
+                <li>
+                    <a href="pricing.html" class="footer-link">Pricing</a>
+                </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Company</p>
+                </li>
+                <li>
+                    <a href="services.html" class="footer-link">Why Company</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">Partner With Us</a>
+                </li>
+                <li>
+                    <a href="services.html" class="footer-link">FAQ</a>
+                </li>
+                <li>
+                    <a href="about_us.html" class="footer-link">Blog</a>
+                </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Support</p>
+                </li>
+                <li>
+                    <a href="login_copy.html" class="footer-link">Account</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">Support Center</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">Feedback</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
+                </li>
+                </ul>
+                
+                
+                
+                <div class="footer-list">
+                    <p class="footer-list-title">Get in Touch</p>
+                    <p class="footer-text">Question or feedback? We’d love to hear from you.</p>
+                    <form action="" class="input-wrapper">
+                        <input type="email" name="email_address" placeholder="Email_address" autocomplete="off" required class="input-field">
+                        <button type="submit" class="input-btn" aria-label="Send a message">
+                            <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">Made by <a href="https://www.instagram.com/__princy.singh__/" class="copyright-link">Princy Singh<ion-icon name="logo-instagram"></ion-icon></a></p>
+            </div>
+            <ul class="footer-list-bottom">
+
+
+                <li>
+                    <a href="term.html" class="footer-bottom-link">Terms and Condition</a>
+                </li>
+                <li>
+                    <a href="privacy.html" class="footer-bottom-link">Privacy and Policy</a>
+                </li>
+            </ul>
+
+
+        </div>
+    </footer>
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
